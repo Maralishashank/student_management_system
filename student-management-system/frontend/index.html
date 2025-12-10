@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Student Management - Demo</title>
+  <style>
+    body{ font-family: Arial, sans-serif; margin: 20px; }
+    .card{ border:1px solid #ddd; padding: 12px; margin-bottom:10px; border-radius:6px; }
+    input, button { padding:8px; margin:6px 0; }
+    img.preview{ max-width:100%; border:1px solid #ccc; margin-top:8px; }
+  </style>
+</head>
+<body>
+  <h2>Student Management - Demo UI</h2>
+
+  <div class="card">
+    <h3>Add Student</h3>
+    <input id="firstName" placeholder="First name" /><br/>
+    <input id="lastName" placeholder="Last name" /><br/>
+    <input id="email" placeholder="Email" /><br/>
+    <input id="rollNo" placeholder="Roll No" /><br/>
+    <input id="className" placeholder="Class" /><br/>
+    <button onclick="addStudent()">Add</button>
+  </div>
+
+  <div class="card">
+    <h3>Students</h3>
+    <div id="list"></div>
+  </div>
+
+  <h3>UI Preview (placeholders)</h3>
+  <img class="preview" src="assets/login-ui.png" alt="login">
+  <img class="preview" src="assets/admin-dashboard.png" alt="admin">
+  <img class="preview" src="assets/student-dashboard.png" alt="student">
+
+  <script src="app.js"></script>
+</body>
+</html>
